@@ -28,3 +28,27 @@ create table c.listing (
     model_id int,
     status varchar
 )
+
+create table c.car_type (
+    id serial NOT NULL,
+    type varchar,
+    drive varchar(3),
+    model_id int
+)
+
+create table c.car_year (
+    id serial NOT NULL,
+    year varchar(4),
+    model_id int
+)
+
+create table c.car_model (
+    id serial NOT NULL,
+    make_id int,
+    model_name varchar
+)
+
+create table c.car_make (
+    id serial NOT NULL,
+    make varchar
+)

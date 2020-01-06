@@ -10,21 +10,21 @@ create table c.user_login (
     id serial NOT NULL,
     email varchar,
     password text,
-    user_id integer
+    user_id int
 )
 create table c.photos (
     id serial NOT NULL,
     image_url text,
-    listing_id integer
+    listing_id int
 )
 
 create table c.listing (
     id serial NOT NUll,
-    price integer,
-    miles integer,
+    price int,
+    miles int,
     listing_date timestamp WIth time zone DEFAULT CURRENT_TIMESTAMP NOT NULL,
     description text,
-    year_id integer,
-    model_id integer,
+    year_id int,
+    model_id int,
     status varchar
 )

@@ -33,10 +33,13 @@ class Home extends Component {
         axios.get(`/api/${info}`).then(res => this.setState({[info]: res.data}))
         .catch(err => console.log('error on new listing',err))
     }
-    
+    render() {
+        return(
+            <div>
+                </div>
+        )
+    }
 }
 
 export default Home
 
-test
-test

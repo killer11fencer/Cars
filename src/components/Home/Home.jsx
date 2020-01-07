@@ -7,7 +7,7 @@ class Home extends Component {
     constructor() {
         super();
         this.state = {
-            new_listing: [],
+            new_listing: [{}],
             sold_listing: [],
             introduction: '',
             paragraph:'',
@@ -34,6 +34,9 @@ class Home extends Component {
         .catch(err => console.log('error on new listing',err))
     }
     render() {
+        let display_new = this.state.new_listing.map((elem,id)=> {
+            return <div className='new_listing' key={id}></div>
+        })
         return(
             <div>
                 </div>

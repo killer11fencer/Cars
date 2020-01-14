@@ -9,4 +9,8 @@ class Inventory extends Component {
             verbage: {}
         }
     }
+
+    handleChange = (e) => {
+        this.setState({[e.target.name]: e.target.value})
+    }
 }

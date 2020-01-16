@@ -13,4 +13,9 @@ class Inventory extends Component {
     handleChange = (e) => {
         this.setState({[e.target.name]: e.target.value})
     }
+
+    get_inventory = () => {
+        axios.get('/api/inventory').then(res=>this.setState({inventory: res.data}))
+        
+    }
 }

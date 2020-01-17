@@ -16,6 +16,16 @@ class Inventory extends Component {
 
     get_inventory = () => {
         axios.get('/api/inventory').then(res=>this.setState({inventory: res.data}))
-        
+
+    }
+
+    render () {
+        return (
+            <div>
+
+            </div>
+        )
     }
 }
+
+export default Inventory

@@ -35,7 +35,7 @@ class Home extends Component {
     }
     render() {
         let display_new = this.state.new_listing.map((elem,id)=> {
-            return <div className='new_listing' key={id}></div>
+        return <div className='new_listing' key={id}>{elem.name}</div>
         })
         return(
             <div>

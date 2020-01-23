@@ -1,4 +1,5 @@
 require('dotenv').config()
+const ctrl = require('./ctrl/ctrl')
 const massive = require('massive')
 const express = require('express')
 const session = require('express-session')
@@ -43,3 +44,5 @@ app.get('/api/contact_info',ctrl.get_contact)
 app.put('/api/introduction/:id',ctrl.update_intro)
 app.put('/api/paragraph/:id',ctrl.update_para)
 app.put('/api/contact_info,ctrl',ctrl.update_contact)
+//Inventory Page Content
+app.get('/api/inventory',ctrl.get_inv)

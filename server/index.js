@@ -33,16 +33,16 @@ massive(CONNECTION_STRING).then(db=>{
     app.listen(SERVER_PORT,()=>console.log('listening on port',SERVER_PORT))
 }).catch(err=>console.log('error on connection',err))
 
-//Home Page Pictures
-app.get('/api/new_listing'),ctrl.get_new)
-app.get('/api/sold_listing',ctrl.get_sold)
-//Home Page Content
-app.get('/api/introduction',ctrl.get_intro)
-app.get('/api/paragraph',crtl.para)
-app.get('/api/contact_info',ctrl.get_contact)
-//Edit Page Content
-app.put('/api/introduction/:id',ctrl.update_intro)
-app.put('/api/paragraph/:id',ctrl.update_para)
-app.put('/api/contact_info,ctrl',ctrl.update_contact)
-//Inventory Page Content
-app.get('/api/inventory',ctrl.get_inv)
+// //Home Page Pictures
+// app.get('/api/new_listing'),ctrl.get_new)
+// app.get('/api/sold_listing',ctrl.get_sold)
+// //Home Page Content
+// app.get('/api/introduction',ctrl.get_intro)
+// app.get('/api/paragraph',crtl.para)
+// app.get('/api/contact_info',ctrl.get_contact)
+// //Edit Page Content
+// app.put('/api/introduction/:id',ctrl.update_intro)
+// app.put('/api/paragraph/:id',ctrl.update_para)
+// app.put('/api/contact_info,ctrl',ctrl.update_contact)
+// //Inventory Page Content
+// app.get('/api/inventory',ctrl.get_inv)

@@ -39,6 +39,9 @@ class Home extends Component {
         })
         return(
             <div>
+                <h1>New Arrivals</h1>
+                <h5>Inventory</h5>
+                <h5>Recently Searched</h5>
                 </div>
         )
     }

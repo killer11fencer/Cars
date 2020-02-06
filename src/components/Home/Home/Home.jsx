@@ -40,8 +40,11 @@ class Home extends Component {
         return(
             <div>
                 <h1>New Arrivals</h1>
+                {display_new}
                 <h5>Inventory</h5>
+                {display_inventory}
                 <h5>Recently Searched</h5>
+                {display_recent}
                 </div>
         )
     }

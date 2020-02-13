@@ -37,6 +37,9 @@ class Home extends Component {
         let display_new = this.state.new_listing.map((elem,id)=> {
         return <div className='new_listing' key={id}>{elem.name}</div>
         })
+        let display_recent = this.state.recent_searched.map((elem,id)=>{
+        return <div className='recent_listing' key={id}>{elem.name}</div>
+        })
         return(
             <div>
                 <h1>New Arrivals</h1>

@@ -9,5 +9,10 @@ module.exports = {
         db.get_sold().then(result=>res.status(200).send(result))
         .catch(err=>console.log('err on sold listing',err))
 
+    },
+    get_recent: (req,res) => {
+        const db = req.app.get('db')
+        db.get_recent().then(result=>res.status(200).send(result))
+        .catch(err=>console.log('err on sold listing',err))
     }
 }
